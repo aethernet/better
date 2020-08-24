@@ -1,0 +1,10 @@
+stages:
+  - test
+
+build:
+  stage: test
+  image: node:latest
+  script:
+    - npm install
+    - npm test
+
