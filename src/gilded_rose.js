@@ -61,7 +61,8 @@ class Shop {
   }
 }
 
-module.exports = {
+export default Shop
+export {
   Item,
   Shop
 }
