@@ -1,3 +1,4 @@
+/** Toolbox Static Class */
 export default class Tools {
   /** Bound quality between 0 & 50
    * @param {Item} item - Item to limit

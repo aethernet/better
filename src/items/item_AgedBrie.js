@@ -1,10 +1,11 @@
 import Tools from '../tools'
 
+/** Static Aged Brie Update Class */
 export default class AgedBrieItemUpdate {
-  /** Update quality for Aged Brie Item
-     * @param {Item} item - Item to update
-     * @returns {Item} - Updated Item
-     */
+  /** Updates Aged Brie Item
+   * @param {Item} item - Item to update
+   * @returns {Item} - Updated Item
+   */
   static update({ name, sellIn, quality }) {
     return {
       name,

@@ -1,6 +1,11 @@
 import Tools from '../tools'
 
+/** Static Regular Item Update Class */
 export default class RegularItemUpdate {
+  /** Updates Regular Item
+   * @param {Item} item - Item to update
+   * @returns {Item} - Updated Item
+   */
   static update({ name, sellIn, quality }) {
     return {
       name,
