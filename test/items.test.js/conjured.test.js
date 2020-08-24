@@ -13,9 +13,9 @@ describe('Update Conjured Items', () => {
 
   it('should double decrease quality once Item sell by date has passed', () => {
     const gildedRose = new Shop([
-      new Item('foo', -1, 10),
-      new Item('bar', 0, 2),
-      new Item('bar', -2, -2),
+      new Item('Conjured foo', -1, 10),
+      new Item('Conjured bar', 0, 2),
+      new Item('Conjured bar', -2, -2),
     ])
     const items = gildedRose.updateQuality()
     expect(items[0].quality).toBe(6)
