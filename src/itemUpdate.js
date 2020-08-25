@@ -7,11 +7,22 @@ import ConjuredItem from './items/item_Conjured'
 /** Item Update Aggregating Class */
 export default class ItemUpdate {
   /**
-   * Update Item by Name
-   * @param {Item} item - Item to update
-   * @returns {Item} - Updated item
+   * Mutate current Item with new data
+   * @param {Item} item
+   * @returns {Item} - updated Item
    */
   static update(item) {
+    // TODO: this shouldn't be a mutation,
+    // a better approach would be to slash the goblin and expand Item class with proper method
+    return Object.assign(item, ItemUpdate.updateByName(item))
+  }
+
+  /**
+   * Update Item by Name
+   * @param {Item} item - Item to update
+   * @returns {Item} - Updated Item
+   */
+  static updateByName(item) {
     // Refactoring Note: Legacy code was more strict than specs for
     // _Sulfuras_ and _Backstage passes_ with only one item accepted for each
     // category.
